@@ -29,7 +29,7 @@ soup = toJson(r.text)
 # 我们需要带表单的参数,这里面有个参数lt,登录操作的流水号，我们需要从html页面中进行提取
 payload ={'username':'xxxx','password':'xxxx','lt':soup["lt"],'execution':'e1s1','_eventId':'submit'}
 r = s.post("http://www.xxxxxx.com/cas/login",data=payload,headers=header)
-# http://www.gzaqy.com/Base/home/enterprise#sys/Safety/index/index
+# http://www.xxxxx.com/Base/home/enterprise#sys/Safety/index/index
 # r2 = requests.get('http://www.xxxx.com/Base/home/enterprise#sys/Safety/index/index')
 print r.text
 # print r2.text

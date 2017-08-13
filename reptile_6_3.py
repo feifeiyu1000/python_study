@@ -20,7 +20,7 @@ postdata = urllib.urlencode({
 			'password':'xxxxx'
 		})
 #登录教务系统的URL
-#loginUrl = 'http://www.gzaqy.com/cas/login?service=http://www.gzaqy.com/Base/'
+#loginUrl = 'http://www.xxxxx.com/cas/login?service=http://www.xxxxx.com/Base/'
 #loginUrl = 'http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bks_login2.login'
 req = urllib2.Request(url = 'https://passport.csdn.net/account/login',headers = hdr)
 #loginUrl = 'https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn'
@@ -33,7 +33,7 @@ result = opener.open(req,postdata)
 cookie.save(ignore_discard=True, ignore_expires=True)
 #利用cookie请求访问另一个网址，此网址是成绩查询网址
 #gradeUrl = 'http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre'
-#gradeUrl = 'http://www.gzaqy.com/Base/home/enterprise#sys/Safety/index/index'
+#gradeUrl = 'http://www.xxxxx.com/Base/home/enterprise#sys/Safety/index/index'
 gradeUrl = 'http://my.csdn.net/my/mycsdn'
 #请求访问成绩查询网址
 result = opener.open(gradeUrl)
