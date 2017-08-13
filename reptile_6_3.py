@@ -16,8 +16,8 @@ hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML,
 cookie = cookielib.MozillaCookieJar(filename)
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
 postdata = urllib.urlencode({
-			'username':'zhuzhudong1@163.com',
-			'password':'QAZXCV'
+			'username':'xxxxxx',
+			'password':'xxxxx'
 		})
 #登录教务系统的URL
 #loginUrl = 'http://www.gzaqy.com/cas/login?service=http://www.gzaqy.com/Base/'
